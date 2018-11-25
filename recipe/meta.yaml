@@ -15,8 +15,8 @@ source:
   sha256: 17adf35c78effc46eac4a559b6917d46fdf1ceaf0bfec691955d2e32cf5daea5
 
 build:
-  number: 0
-  skip: true  # [win32]
+  noarch: generic
+  number: 1000
 
   rpaths:
     - lib/R/lib/
@@ -40,8 +40,7 @@ about:
   summary: Coerce R object to asciidoc, txt2tags, restructuredText, org, textile or pandoc syntax.  Package
     comes with a set of drivers for Sweave.
   license_family: GPL3
-  license_file: '{{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-3'  # [unix]
-  license_file: '{{ environ["PREFIX"] }}\R\share\licenses\GPL-3'  # [win]
+  license_file: '{{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-3'
 
 extra:
   recipe-maintainers:
