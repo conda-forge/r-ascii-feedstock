@@ -25,21 +25,27 @@ requirements:
     - {{ posix }}zip               # [win]
   host:
     - r-base
+    - r-codetools
+    - r-digest
+    - r-survival
   run:
     - r-base
+    - r-codetools
+    - r-digest
+    - r-survival
 
 test:
   commands:
-    # You can put additional test commands to be run here.
     - $R -e "library('ascii')"           # [not win]
     - "\"%R%\" -e \"library('ascii')\""  # [win]
 
 about:
   home: http://eusebe.github.com/ascii/, http://github.com/eusebe/ascii/
-  license: GPL (>= 2)
+  license: GPL-2.0-or-later
   summary: Coerce R object to asciidoc, txt2tags, restructuredText, org, textile or pandoc syntax.  Package comes with a set of drivers for Sweave.
   license_family: GPL3
-  license_file: {{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-2
+  license_file:
+    - {{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-2
 
 extra:
   recipe-maintainers:
