@@ -1,4 +1,4 @@
-{% set version = '2.1' %}
+{% set version = "2.3" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,11 +10,11 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/ascii_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/ascii/ascii_{{ version }}.tar.gz
-  sha256: 17adf35c78effc46eac4a559b6917d46fdf1ceaf0bfec691955d2e32cf5daea5
+  sha256: 53a6bd2895e283536092c3186d00b4f0116874c9c2fa92d318c5ed61eeaa132b
 
 build:
-  merge_build_host: True  # [win]
-  number: 1003
+  merge_build_host: true  # [win]
+  number: 0
   noarch: generic
   rpaths:
     - lib/R/lib/
@@ -37,10 +37,9 @@ test:
 about:
   home: http://eusebe.github.com/ascii/, http://github.com/eusebe/ascii/
   license: GPL (>= 2)
-  summary: Coerce R object to asciidoc, txt2tags, restructuredText, org, textile or pandoc syntax.  Package
-    comes with a set of drivers for Sweave.
+  summary: Coerce R object to asciidoc, txt2tags, restructuredText, org, textile or pandoc syntax.  Package comes with a set of drivers for Sweave.
   license_family: GPL3
-  license_file: '{{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-2'
+  license_file: {{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-2
 
 extra:
   recipe-maintainers:
