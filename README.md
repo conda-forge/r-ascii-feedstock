@@ -3,7 +3,7 @@ About r-ascii
 
 Home: http://eusebe.github.com/ascii/, http://github.com/eusebe/ascii/
 
-Package license: GPL (>= 2)
+Package license: GPL-2.0-or-later
 
 Feedstock license: BSD-3-Clause
 
