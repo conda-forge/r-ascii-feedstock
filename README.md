@@ -1,11 +1,11 @@
-About r-ascii
-=============
+About r-ascii-feedstock
+=======================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-ascii-feedstock/blob/main/LICENSE.txt)
 
 Home: http://eusebe.github.com/ascii/, http://github.com/eusebe/ascii/
 
 Package license: GPL-2.0-or-later
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-ascii-feedstock/blob/main/LICENSE.txt)
 
 Summary: Coerce R object to asciidoc, txt2tags, restructuredText, org, textile or pandoc syntax.  Package comes with a set of drivers for Sweave.
 
